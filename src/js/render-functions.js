@@ -11,7 +11,11 @@ export function createGallery(images) {
       <a href="${img.largeImageURL}">
         <img src="${img.webformatURL}" alt="${img.tags}" />
       </a>
+      <div class="info">
       <p>❤️ ${img.likes} | 👁 ${img.views}</p>
+      <p>💬 Comments: ${img.comments}</p>
+        <p>⬇ Downloads: ${img.downloads}</p>
+      </div>
     </li>
   `).join("");
 
